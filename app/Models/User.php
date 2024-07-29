@@ -2,13 +2,12 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class User extends Model
 {
-    protected $fillable = ['firstName', 'lastName', 'email', 'mobile', 'password', 'otp'];
-    protected $attributes = [
-        'otp' => 0
-    ];
+ protected $_fillable   = ['firstName', 'lastName', 'email', 'mobile', 'password', 'otp'];
+ protected $_attributes = [
+  'otp' => 0,
+ ];
 }
